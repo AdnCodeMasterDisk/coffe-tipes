@@ -1,0 +1,49 @@
+$sides: (
+"": "",
+"t": "top",
+"b": "bottom",
+"l": "left",
+"r": "right",
+);
+
+$breakpoints: (
+"": "",
+"s": 800px,
+);
+
+@each $breakName, $breakValue in $breakpoints {
+  @each $sideName, $sideValue in $sides {
+    @for $i from 0 through 100 {
+
+      $property: if($sideName == '', '', -#{$sideValue});
+      $space: $i * 5;
+      $selector: '';
+
+      @if $breakName != "" {
+        $selector: #{$sideName}#{$breakName}#{$i};
+      } @else {
+        $selector: #{$sideName}#{$i};
+      }
+
+      @if $breakName != "" {
+        @media (max-width: $breakValue) {
+          .m#{$selector} {
+            margin#{$property}: #{$space}px;
+          }
+
+          .p#{$selector} {
+            padding#{$property}: #{$space}px;
+          }
+        }
+      } @else {
+        .m#{$selector} {
+          margin#{$property}: #{$space}px;
+        }
+
+        .p#{$selector} {
+          padding#{$property}: #{$space}px;
+        }
+      }
+    }
+  }
+}

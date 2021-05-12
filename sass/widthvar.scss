@@ -1,0 +1,40 @@
+$sides: (
+"": "",
+);
+
+$breakpoints: (
+"": "",
+"s": 700px,
+"m": 900px,
+"l": 1300px,
+"x": 1500px,
+);
+
+@each $breakName, $breakValue in $breakpoints {
+  @each $sideName, $sideValue in $sides {
+    @for $i from 0 through 100 {
+
+      $property: if($sideName == '', '', -#{$sideValue});
+      $space: $i * 1;
+      $selector: '';
+
+      @if $breakName != "" {
+        $selector: #{$sideName}#{$breakName}#{$i};
+      } @else {
+        $selector: #{$sideName}#{$i};
+      }
+
+      @if $breakName != "" {
+        @media (min-width: $breakValue) {
+          .w#{$selector} {
+            width#{$property}:  #{$space}px;
+          }
+        }
+      } @else {
+        .w#{$selector} {
+            width#{$property}:  #{$space}px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,322 @@
+.boxtittle{
+    background-image: url(../img/bg1.jpg);
+    z-index: 1;
+    height: 100vh;
+    position: fixed;
+}
+
+.contenido{
+    position: absolute;
+    right: 0px;
+}
+
+.ti{
+    z-index: 1000;
+}
+
+.titulo1{
+    font-size: 8em;
+    margin-top: 25%;
+    margin-left: 15%;
+    font-weight: 100;
+}
+
+.titulo2{
+    font-size: 12em;
+    margin-top: 40%;
+    margin-left: 20%;
+}
+
+.fav{
+    top: 20px;
+    right: 50%;
+    cursor: pointer;    
+    z-index: 1000;
+    position: fixed;
+}
+
+.atr {
+    top: 20px;
+    right: 50px;
+    cursor: pointer;    
+    z-index: 1000;
+    position: absolute;
+}
+
+.icofav{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.contar{
+    margin-top: 80px;
+}
+
+.tar{
+    height: 130px;
+    margin-bottom: 50px;
+}
+
+.indicador{
+    border-radius: 0px 0px 30px 0px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.icofavtar{
+    font-size: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.tittletarj{
+    font-size: 40px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.infotarj{
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.imgfloat{
+    position: fixed;
+    z-index: 10;
+    width: 120px;
+    right: 0px;
+    top: 40%;
+}
+
+
+.boxtittleitem{
+    background-image: url(../img/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    height: 90%;
+    border-radius: 0px 0px 0px 80px;
+    box-shadow: 0px 0px 16px rgba(65, 47, 47, 0.3);
+    right: 0px;
+    position: absolute;
+}
+
+.favitemico{
+    right: -5px;
+}
+
+.itemimg{
+    right: 0px;
+    top: 25%;
+}
+
+.boxingredientes{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.tittleingrediente{
+    font-size: 1.3em;
+}
+.ingrediente{
+    font-size: 2em;
+    margin-top: 50px;        
+    font-weight:700;
+    margin-left: 15px;
+}
+
+.porcentaje{
+    font-size: 4em;
+    margin-left: 45px;        
+    margin-top: 40px; 
+}
+
+.icofavitem{
+    position: absolute;
+    z-index: 2000;
+    border-radius: 50%;
+    bottom: -30px;
+    width:60px;
+    height:60px;
+    left: 5%;
+}
+
+.icofavit{
+    font-size: 30px;
+}
+
+.desitem{
+    position: absolute;
+    top:10%;
+    width: 50%;
+    left: -60%;
+}
+
+.subtitulodescrip{
+    font-size: 3em;
+}
+
+.titulodescrip{
+    font-size: 5em;
+    margin-top: 50px;    
+    line-height: 70px; 
+}
+
+
+.descripitem{
+    font-size: 1em;
+    margin-top: 50px;
+    line-height: 30px;
+}
+
+@media (max-width: 1000px) {
+
+    .containter{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .boxtittle{
+        height: 220px;
+        border-radius: 0px 0px 0px 60px;
+        position: absolute;
+    }
+
+    .contenido{
+        margin-top: 210px;
+    }
+    
+    .titulo1{
+        font-size: 2em;
+        margin-top: 12%;
+        margin-left: 25%;
+        font-weight: 100;
+    }
+    
+    .titulo2{
+        font-size: 4.5em;
+        margin-top: 20%;
+        margin-left: 30%;
+    }
+
+    .contar{
+        margin-top: 50px;
+    }
+    
+    .fav{
+        top: 20px;
+        right: 25%;
+        cursor: pointer;    
+        z-index: 1000;
+        position:absolute;
+    }
+
+    .atr {
+        top: 20px;
+        right: 60px;
+        cursor: pointer;    
+        z-index: 1000;
+        position: absolute;
+    }
+    
+    .indicador{
+        border-radius: 0px 0px 30px 0px;
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .tittletarj{
+        font-size: 30px;
+        margin-top: 0px;
+    }
+    
+    .infotarj{
+        font-size: 15px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+    .imgfloat{
+        position: absolute;
+        z-index: 10;
+        width: 80px;
+        right: 0px;
+        top: 20%;
+    }
+
+    .boxtittleitem{
+        background-image: url(../img/bg1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 1;
+        height: 400px;
+        border-radius: 0px 0px 0px 80px;
+        box-shadow: 0px 0px 16px rgba(65, 47, 47, 0.3);
+    }
+    
+    .itemimg{
+        right: 0px;
+        top:45%;
+    }
+
+    .boxingredientes{
+        position: absolute;
+        top: 25px;
+        left:30px;
+    }
+
+    .tittleingrediente{
+        font-size: 0.8em;
+    }
+
+    .ingrediente{
+        font-size: 1.1em;
+        margin-top: 10px;        
+        font-weight:700;
+        margin-left: 0px;   
+    }
+
+    .porcentaje{
+        font-size: 2em;
+        margin-left: 15px;        
+        margin-top: 2px; 
+    }
+
+    .icofavitem{
+        position: absolute;
+        z-index: 2000;
+        border-radius: 50%;
+        top: 90%;
+        width:60px;
+        height:60px;
+        left: 8%;
+    }
+
+    .icofavit{
+        font-size: 30px;
+    }
+
+    .desitem{
+        position: absolute;
+        top: 110%;
+        width:85%;
+        left: 8%;
+    }
+
+    .subtitulodescrip{
+        font-size: 2em;
+    }
+
+    .titulodescrip{
+        font-size: 4em;
+        line-height: 70px;        
+        margin-top: 20px;
+    }
+
+    .descripitem{
+        font-size: 1em;
+        margin-top: 20px;
+        line-height: 28px;
+    }
+}
